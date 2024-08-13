@@ -1,0 +1,163 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}
+\usepackage{multicol}
+\newcounter{sectioicolsn}
+\usepackage{amsmath}
+%\def\inputGnumericTable{}
+
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{Complex Numbers}
+\author{AI24BTECH11033-Tanishq Rajiv Bhujbale}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section{MCQs with One or More than One Correct}
+\begin{enumerate}
+    \item If $\omega$ is an imaginary cube root of unity, then 
+    $\brak{1+\omega-\omega^2}^7$ equals \hfill (1998-2 Marks)
+    \begin{enumerate}
+    \item $128\omega$    
+    \item $128\omega$
+    \item $128\omega^2$
+    \item $-128\omega^2$
+    \end{enumerate}
+    \item The value of the sum 
+   $\sum_{n=1}^{13} \brak{i^n+i^{n+1}}$
+where  $i=\sqrt{-1}$ , equals: \hfill (1998 - 2 Marks)
+\begin{multicols}{4}
+    \begin{enumerate}
+    \item $i$
+    \item $i - 1$
+    \item $-i$
+    \item $0$
+    \end{enumerate}
+\end{multicols}
+    \item If 
+    \mydet{6i & -3i & 1 \\4 & 3i & -1 \\20 & 3 & i}= $x+iy$,then \hfill (1998 - 2 Marks)
+\begin{enumerate}
+    \item $x=3,y=4$    
+    \item $x=1,y=3$ 
+    \item $x=0,y=4$
+    \item $x=0,y=0$
+    \end{enumerate}
+    \item Let $z_1$ and $z_2$ be two distinct complex numbers and let $z= \brak{1-t}z_1+tz_2$ for some real number $t$ with $0<t<1$. If $\mathrm{arg}\brak{w}$ denotes the principal argument of a non-zero complex number $w$, then: 
+    \hfill (2010)
+\begin{enumerate}
+    \item $\abs{z-z_1}+\abs{z-z_2}=\abs{z_1-z_2}$
+    \item $\mathrm{arg}\brak{z-z_1}=\mathrm{arg}\brak{z-z_2}$
+    \item $\mydet{z-z_1 & \overline{z}-\overline{z_1} \\z_2-z_1 & \overline{z_2}-\overline{z_1}}$
+    \item $\mathrm{arg}\brak{z-z_1}=\mathrm{arg}\brak{z_2-z_1}$
+\end{enumerate}
+\item Let $w=\frac{\sqrt{3}+i}{2}$ and $P=\cbrak{w^n:n=1,2,3,\ldots}$. Further, let $H_1=\cbrak{\cond{z \in \mathbb{C} }  \text{Re}(z) > \frac{1}{2}}$ and $H_2=\cbrak{ \cond{z \in \mathbb{C}} \text{Re}(z) < -\frac{1}{2}},$
+where $\mathbb{C}$ is the set of all complex numbers. If $z_1 \in H_1$, $z_2 \in H_2$, and $O$ represents the origin, then the angle $\angle z_1Oz_2$ is:
+
+\hfill (JEE Adv. 2013)
+\begin{multicols}{4}
+    \begin{enumerate}
+    \item $\frac{p}{2}$
+    \item $\frac{p}{6}$
+    \item $\frac{2p}{3}$
+    \item $\frac{5p}{6}$
+    \end{enumerate}
+\end{multicols}
+\item Let $a,b \in \mathbb{R}$ and $a^2+b^2 \ne 0$. Suppose $S=\cbrak{ \cond{z \in \mathbb{C}} z = \frac{1}{a + ibt}, \, t \ne 0},$
+    where $i=\sqrt{-1}$. If $z=x+iy$ and $z \in S$, then $\brak{x,y}$ lies on:
+    
+    \hfill (JEE Adv. 2016)
+    \begin{enumerate}
+    \item the circle with radius $\frac{1}{2a}$ and center $\brak{\frac{1}{2a},0}$ for $a>0$,$b \ne 0$.
+    \item the circle with radius $\frac{1}{2a}$ and center $\brak{\frac{-1}{2a}, 0}$ for $a<0$,$b \ne 0$.
+    \item the $x$-axis for $a \ne 0$, $b=0$.
+    \item the $y$-axis for $a=0$, $b \ne 0$.
+    \end{enumerate}
+\item Let $a,b,x,$ and $y$ be real numbers such that $a-b=1$ and $y \ne 0$. If the complex number $z=x+iy$ satisfies $\text{Im}\brak{\frac{az+b}{z+1}}=y,$ then which of the following is (are) possible value(s) of $x$? 
+
+\hfill (JEE Adv. 2017)
+\begin{enumerate}
+    \item $-1+\sqrt{1-y^2}$
+    \item $-1-\sqrt{1-y^2}$
+    \item $1+\sqrt{1+y^2}$
+    \item $1-\sqrt{1+y^2}$
+    \end{enumerate}
+    \item For a non-zero complex number $z$ , let $\mathrm{arg}\brak{z}$ denote the principal argument with $-\pi < \mathrm{arg}\brak{z}\ \leq \pi$. Then,which of the following statement(s) is (are) FALSE?  \hfill (JEE Adv. 2018)
+    \begin{enumerate}
+    \item $\mathrm{arg}\brak{-1-i}=\frac{\pi}{4},where i=\sqrt{-1}$
+    \item The function $f:\mathbb{R} \to \lbrak{-\pi}, \rsbrak{\pi}$, defined by $f\brak{t}=\mathrm{arg}\brak{-1+it}$ for all $t \in \mathbb{R}$, is continuous at all points of $\mathbb{R}$, where $i=\sqrt{-1}$
+    \item For any two complex numbers $z_1$ and $z_2$ ,$\mathrm{arg}\brak{\frac{z_1}{z_2}}-\mathrm{arg}\brak{z_1}+\mathrm{arg}\brak{z_2}$ is an integer multiple of $2\pi$
+    \item For any three given distinct complex numbers $z_1,z_2$ and $z_3$, the locus of the point $z$ satisfying the condition $\mathrm{arg} \brak{\frac{\brak{z-z_1}\brak{z-z_2}}{\brak{z-z_3}\brak{z_2-z_1}}}=\pi$,lies on a straight line
+    \end{enumerate}
+    \item Let $s,t,r$ be non-zero complex numbers and $L$ be the set of solutions  $z=x+iy$ $\brak{x,y, \in \mathbb{R},i=\sqrt{-1}}$ of the equation $sz+t\overline{z}+r=0$, where $\overline{z}=x-iy$.Then, which of the following statements(s) is (are) TRUE? \hfill (JEE Adv. 2018)
+    \begin{enumerate}
+    \item Let $L$ has exactly one element, then $\abs{s} \ne \abs{t}$
+    \item If $\abs{s}=\abs{t}$,then $L$ has infinitely many elements 
+    \item The number of elements in $L \cap \cbrak{z:\abs{z-1+i}=5}$ is at most 2
+    \item If $L$  has more than one element, then $L$ has infinitely many elements 
+    \end{enumerate}
+    \end{enumerate}
+    \section{Subjective Problems}
+    \begin{enumerate}
+    \item Express $\frac{1}{1-\cos\theta+2i\sin\theta}$ in the form $x+iy$.
+    \hfill (1978)
+    \item If $x=a+b$ , $y=a\gamma+b\beta$ and $z=a\beta+b\gamma$ where $\gamma$ and $\beta$ are the complex cube roots of unity, show that $xyz=a^3+b^3$ \hfill (1978)
+    \item If $x+iy=\sqrt{\frac{a + ib}{c + id}}$, prove that $\brak{x^2+y^2}^2$ = $\frac{a^2+b^2}{c^2+d^2}$
+ 
+    \hfill (1979)
+    \item Find real values of $x$ and $y$ for which the following equation is satisfied $\frac{\brak{1+i}x-2i}{3+i}+\frac{\brak{2-3i}y+i}{3-i}=i$
+
+    \hfill (1980)
+    \item Let the complex numbers $z_1,z_2$ and $z_3$ be the vertices of an equilateral triangle. Let $z_0$ be the circumcentre of the triangle. Then prove that $z_1^2+z_2^2+z_3^2=3z_0^2$. \hfill (1981 - 4 Marks)
+    \item Prove that the complex numbers $z_1,z_2$ and the origin form an equilateral triangle only if $z_1^2+z_2^2-z_1z_2=0$. \hfill (1983 - 3 Marks)
+    \end{enumerate} 
+    \end{document}
