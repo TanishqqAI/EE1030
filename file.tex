@@ -1,4 +1,15 @@
-\documentclass[journal,12pt, onecolumn]{IEEEtran}
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{algorithmic}
@@ -14,12 +25,10 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} 
 \usepackage{listings}
-\usepackage{gvv}
 \usepackage{multicol}
 \newcounter{sectioicolsn}
-\usepackage{amsmath}
-%\def\inputGnumericTable{}
-
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
 \usepackage[latin1]{inputenc}                                
 \usepackage{color}                                            
 \usepackage{array}                                            
@@ -29,25 +38,8 @@
 \usepackage{hhline}                                           
 \usepackage{ifthen}                                           
 \usepackage{lscape}
-\usepackage{tabularx}
-\usepackage{array}
-\usepackage{float}
-
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{problem}{Problem}
-\newtheorem{proposition}{Proposition}[section]
-\newtheorem{lemma}{Lemma}[section]
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{example}{Example}[section]
-\newtheorem{definition}[problem]{Definition}
-\newcommand{\BEQA}{\begin{eqnarray}}
-\newcommand{\EEQA}{\end{eqnarray}}
-\newcommand{\define}{\stackrel{\triangle}{=}}
-\theoremstyle{remark}
-\newtheorem{rem}{Remark}
-
-% Marks the beginning of the document
 \begin{document}
+
 \bibliographystyle{IEEEtran}
 \vspace{3cm}
 \title{Complex Numbers}
@@ -62,12 +54,14 @@
 \begin{enumerate}
     \item If $\omega$ is an imaginary cube root of unity, then 
     $\brak{1+\omega-\omega^2}^7$ equals \hfill (1998-2 Marks)
+    \begin{multicols}{4}
     \begin{enumerate}
     \item $128\omega$    
     \item $128\omega$
     \item $128\omega^2$
     \item $-128\omega^2$
     \end{enumerate}
+    \end{multicols}
     \item The value of the sum 
    $\sum_{n=1}^{13} \brak{i^n+i^{n+1}}$
 where  $i=\sqrt{-1}$ , equals: \hfill (1998 - 2 Marks)
@@ -80,12 +74,14 @@ where  $i=\sqrt{-1}$ , equals: \hfill (1998 - 2 Marks)
     \end{enumerate}
 \end{multicols}
     \item If \mydet{6i & -3i & 1 \\4 & 3i & -1 \\20 & 3 & i}= $x+iy$,then \hfill (1998 - 2 Marks)
+\begin{multicols}{4}
 \begin{enumerate}
     \item $x=3,y=4$    
     \item $x=1,y=3$ 
     \item $x=0,y=4$
     \item $x=0,y=0$
     \end{enumerate}
+\end{multicols}
     \item Let $z_1$ and $z_2$ be two distinct complex numbers and let $z= \brak{1-t}z_1+tz_2$ for some real number $t$ with $0<t<1$. If $\mathrm{arg}\brak{w}$ denotes the principal argument of a non-zero complex number $w$, then: \hfill (2010)
 \begin{enumerate}
     \item $\abs{z-z_1}+\abs{z-z_2}=\abs{z_1-z_2}$
