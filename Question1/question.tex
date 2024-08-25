@@ -65,8 +65,15 @@ Find the ratio in which the line segment joining the points $\brak{1,-3}$ and $\
 
 \textbf{Solution}:\\
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{/home/tanishq/EE1030/Question1/codes/figs/line_segment_AB.pdf}
+    \caption{Line Segment AB}
+    \label{fig:line_segment_AB}
+\end{figure}
 
-Equation of line segment joining $A(1,-3)$ and $B(4,5)$ given by
+
+Equation of line segment joining $A =\myvec{1 \\ -3}$ and $B= \myvec{4 \\ 5}$ given by
 
    $$\frac{x-1}{3}=\frac{y+3}{8}$$
 
@@ -78,21 +85,18 @@ Equation of line segment joining $A(1,-3)$ and $B(4,5)$ given by
 
    $$x=1+\frac{9}{8}=\frac{8+9}{8}=\frac{17}{8}$$
 
-   Therefore, the point of intersection with the $x$-axis is $\brak{\frac{17}{8}, 0}$.
+   Therefore, the point of intersection with the $x$-axis is $\myvec{\frac{17}{8} \\ 0}$.
 
-   Let this point $\brak{\frac{17}{8},0}$ divide the segment $AB$ in the ratio $k:1$. 
+   Let this point $\myvec{\frac{17}{8} \\ 0 } $ divide the segment $AB$ in the ratio $k:1$. 
    
    Using section formula, 
 
-   $$\brak{\frac{k \cdot 4+1}{k+1},\frac{k \cdot 5-3}{k+1}}=\brak{\frac{17}{8},0}$$
+   $$\myvec{\frac{k \cdot 4+1}{k+1} \\ \frac{k \cdot 5-3}{k+1}}=\myvec{\frac{17}{8} \\ 0 }$$
 
-   Equate the $y$-coordinates:
+   $$ \frac{\myvec{4 \\ 5}k + \myvec{1 \\ -3 }}{k+1} = \myvec{\frac{17}{8} \\ 0 }$$
 
-   $$\frac{k \cdot 5-3}{k+1}=0$$
+   $$ \myvec{\frac{15}{8} \\ 5 }k = \myvec{\frac{9}{8} \\ 3}   $$
 
-   $$k \cdot 5-3=0$$
-
-   $$k=\frac{3}{5}$$
-
-   Hence, the ratio in which the line segment joining the points $(1,-3)$ and $(4,5)$ is divided by the $x$-axis is $3:5$.
+   $$ \text{or}, k=\frac{3}{5} $$
+   Hence, the ratio in which the line segment joining the points $A =\begin{pmatrix} 1 \\ -3 \end{pmatrix}$ and $B=\begin{pmatrix} 4 \\ 5 \end{pmatrix}$ is divided by the $x$-axis is $3:5$.
 \end{document}

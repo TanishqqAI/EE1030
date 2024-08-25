@@ -1,5 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import os
+
+# Ensure the figs directory exists
+if not os.path.exists('figs'):
+    os.makedirs('figs')
 
 # Define the points
 A = (1, -3)
@@ -56,5 +61,9 @@ ax.yaxis.set_ticks_position('left')
 
 # Ensure equal scaling for x and y axes
 ax.set_aspect('equal')
+
+# Save the figure
+plt.savefig('figs/line_segment_AB.png')  # Save as PNG
+plt.savefig('figs/line_segment_AB.pdf')  # Save as PDF
 
 plt.show()
