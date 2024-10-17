@@ -62,41 +62,38 @@
 \textbf{Question}:\\
 Find the ratio in which the line segment joining the points $\brak{1,-3}$ and $\brak{4, 5}$ is divided by $X$ axis.
 
-
 \textbf{Solution}:\\
 
+\renewcommand{\tablename}{TABLE 1}
+\begin{table}[h!]    
+  \centering
+  \input{tables/table.tex}
+  \caption{values of the geometrical points in given question}
+  \label{tab1-1.2-18-1}
+\end{table}
+
+
+If C divides AB in the ratio k : 1
+
+
+\begin{align}
+C=\frac{kB+A}{k+1}
+\end{align}
+
+  Substituting A ,B and C in the formula 
+  
+ \begin{align} 
+ \myvec{ \frac{4.k+1}{k+1}\\ \frac{k.5-3}{k+1}} = \myvec{ x \\ 0} \\	 
+ \frac{k.5-3}{k+1} = 0 \\
+ k=\frac{3}{5}=3:5 
+\end{align}
+
 \begin{figure}[h!]
-    \centering
-    \includegraphics[width=\textwidth]{/home/tanishq/EE1030/Question1/codes/figs/line_segment_AB.pdf}
-    \caption{Line Segment AB}
-    \label{fig:line_segment_AB}
+   \centering
+   \includegraphics[width=0.7\linewidth]{figs/Figure_1.png}
+   \caption{plot for line}
+   \label{fig. 1-1.5-32}
 \end{figure}
 
 
-Equation of line segment joining $A =\myvec{1 \\ -3}$ and $B= \myvec{4 \\ 5}$ given by
-
-   $$\frac{x-1}{3}=\frac{y+3}{8}$$
-
-   The intersection with the $x$-axis occurs when $y=0$. Substitute $y=0$ into the parametric equation:
-
-   $$\frac{x-1}{3}=\frac{3}{8}$$
-
-   $$x-1=\frac{3 \cdot 3}{8}=\frac{9}{8}$$
-
-   $$x=1+\frac{9}{8}=\frac{8+9}{8}=\frac{17}{8}$$
-
-   Therefore, the point of intersection with the $x$-axis is $\myvec{\frac{17}{8} \\ 0}$.
-
-   Let this point $\myvec{\frac{17}{8} \\ 0 } $ divide the segment $AB$ in the ratio $k:1$. 
-   
-   Using section formula, 
-
-   $$\myvec{\frac{k \cdot 4+1}{k+1} \\ \frac{k \cdot 5-3}{k+1}}=\myvec{\frac{17}{8} \\ 0 }$$
-
-   $$ \frac{\myvec{4 \\ 5}k + \myvec{1 \\ -3 }}{k+1} = \myvec{\frac{17}{8} \\ 0 }$$
-
-   $$ \myvec{\frac{15}{8} \\ 5 }k = \myvec{\frac{9}{8} \\ 3}   $$
-
-   $$ \text{or}, k=\frac{3}{5} $$
-   Hence, the ratio in which the line segment joining the points $A =\begin{pmatrix} 1 \\ -3 \end{pmatrix}$ and $B=\begin{pmatrix} 4 \\ 5 \end{pmatrix}$ is divided by the $x$-axis is $3:5$.
 \end{document}

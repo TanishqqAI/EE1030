@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  25 AUG 2024 11:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  17 OCT 2024 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**question.tex
-(./question.tex
+**1.tex
+(./1.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
@@ -1760,8 +1760,8 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 0.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./question.aux)
-\openout1 = `question.aux'.
+) (./1.aux)
+\openout1 = `1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 40.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
@@ -1773,6 +1773,7 @@ LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 40.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
 40.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
@@ -1932,9 +1933,10 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 40.
- (./question.out) (./question.out)
+ (./1.out)
+(./1.out)
 \@outlinefile=\write5
-\openout5 = `question.out'.
+\openout5 = `1.out'.
 
 \c@lstlisting=\count405
 
@@ -1979,52 +1981,49 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-</home/tanishq/EE1030/Question1/codes/figs/line_segment_AB.pdf, id=31, 722.7pt 
-x 722.7pt>
-File: /home/tanishq/EE1030/Question1/codes/figs/line_segment_AB.pdf Graphic fil
-e (type pdf)
-<use /home/tanishq/EE1030/Question1/codes/figs/line_segment_AB.pdf>
-Package pdftex.def Info: /home/tanishq/EE1030/Question1/codes/figs/line_segment
-_AB.pdf  used on input line 70.
-(pdftex.def)             Requested size: 364.1953pt x 364.1942pt.
+(./tables/table.tex)
+<figs/Figure_1.png, id=31, 462.528pt x 346.896pt>
+File: figs/Figure_1.png Graphic file (type png)
+<use figs/Figure_1.png>
+Package pdftex.def Info: figs/Figure_1.png  used on input line 93.
+(pdftex.def)             Requested size: 254.9356pt x 191.20625pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
 dist/fonts/enc/dvips/base/8r.enc}
 
- </home/tanishq/EE1030/Question1/codes/figs/line_segment_AB.pdf>] [2] (./questi
-on.aux)
+] [2 <./figs/Figure_1.png>] (./1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package rerunfilecheck Info: File `question.out' has not changed.
+Package rerunfilecheck Info: File `1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 61841 strings out of 474222
- 1562467 string characters out of 5748734
- 2284263 words of memory out of 5000000
- 83179 multiletter control sequences out of 15000+600000
+ 61861 strings out of 474222
+ 1562389 string characters out of 5748734
+ 2286256 words of memory out of 5000000
+ 83191 multiletter control sequences out of 15000+600000
  623283 words of font info for 169 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 109i,8n,109p,1198b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,15n,109p,1191b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on question.pdf (2 pages, 57794 bytes).
+Output written on 1.pdf (2 pages, 68793 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
