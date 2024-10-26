@@ -1,0 +1,231 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+ % Include tfrupee package
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{enumitem}
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\author{AI24BTECH11033 - Tanishq}
+\title{GATE 1}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\title{2009, ME}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+    \item[25.] The area enclosed between the curves $ y^2=4x $ and $ x^2=4y $ is
+    \begin{enumerate}
+    \item [A.] $\frac{16}{3}$
+    \item [B.] 8
+    \item [C.] $\frac{32}{3}$
+    \item [D.] 16
+  \end{enumerate}
+  \item[26.] The standard deviation of a uniformly distributed random variable between 0 and 1 is
+    \begin{enumerate}
+    \item [A.] $\frac{1}{\sqrt{12}}$
+    \item [B.] $\frac{1}{\sqrt{3}}$
+    \item [C.] $\frac{5}{\sqrt{12}}$
+    \item [D.] $\frac{7}{\sqrt{12}}$
+  \end{enumerate}
+  \item[27.] Consider steady, incompressible and irrotational flow through a reducer in a horizontal pipe where the diameter is reduced from 20 cm to 10 cm . The pressure in the 20 cm pipe just upstream of the reducer is 150 kPa . The fluid has a vapour pressure of 50 kPa  and a specific weight of $5 kN/m^3$ . Neglecting frictional effects, the maximum discharge in $\brak{m^3/s}$ that can pass through the reducer without causing cavitation is
+   \begin{enumerate}
+    \item [A.] 0.05
+    \item [B.] 0.16
+    \item [C.] 0.27
+    \item [D.] 0.38
+  \end{enumerate}
+  \item[28.] In a parallel flow heat exchanger operating under steady state, the heat capacity rates (product of specific heat at constant pressure and mass flow rate) of the hot and cold fluid are equal. The hot fluid, flowing at 1 kg/s with $C_p = 4  kJ/kgK$, enters the heat exchanger at $102^\circ C$ while the cold fluid has an inlet temperature of $15^\circ C$. The overall heat transfer coefficient for the heat exchanger is estimated to be $1 kW/m^2K$ and the corresponding heat transfer surface area is $5 m^2$. Neglect heat transfer between the heat exchanger and the ambient. The heat exchanger is characterized by the following relation:
+ $$ 2\varepsilon = 1 - \exp(-2 NTU) $$
+
+ The exit temperature (in $^\circ C$) for the cold fluid is
+  \begin{enumerate}
+    \item [A.] 45
+    \item [B.] 55
+    \item [C.] 65
+    \item [D.] 75
+  \end{enumerate}
+\item[29.] In an air-standard Otto cycle, the compression ratio is 10. The condition at the beginning of the compression process is 100 kPa and 27 $^\circ C$. Heat added at constant volume is 1500 kJ/kg, while 700 kJ/kg of heat is rejected during the other constant volume process in the cycle. Specific gas constant for air $= 0.287 \, kJ/kgK$. The mean effective pressure (in kPa) of the cycle is
+\begin{enumerate}
+    \item [A.] 103
+    \item [B.] 310
+    \item [C.] 515
+    \item [D.] 1032
+  \end{enumerate}
+  \item[30.] An irreversible heat engine extracts heat from a high temperature source at a rate of 100 kW and rejects heat to a sink at a rate of 50 kW. The entire work output of the heat engine is used to drive a reversible heat pump operating between a set of independent isothermal heat reservoirs at 17 $^\circ C$ and 75 $^\circ C$. The rate (in kW) at which the heat pump delivers heat to its high temperature sink is
+  \begin{enumerate}
+    \item [A.] 50
+    \item [B.] 250
+    \item [C.] 300
+    \item [D.] 360
+  \end{enumerate}
+  \item[31.] You are asked to evaluate assorted fluid flows for their suitability in a given laboratory application. The following three flow choices, expressed in terms of the two-dimensional velocity fields in the $xy$-plane, are made available.
+
+\begin{itemize}
+    \item P. $u = 2y, \; v = -3x$
+    \item Q. $u = 3xy, \; v = 0$
+    \item R. $u = -2x, \; v = 2y$
+\end{itemize}
+
+Which flow(s) should be recommended when the application requires the flow to be incompressible and irrotational?
+\begin{enumerate}
+    \item [A.] P and R
+    \item [B.] Q
+    \item [C.] Q and R
+    \item [D.] R
+  \end{enumerate}
+\item[32.] Water at 25 $^\circ C$ is flowing through a 1.0 km long G.I. pipe of 200 mm diameter at the rate of 0.07 m$^3$/s. If value of Darcy friction factor for this pipe is 0.02 and density of water is 1000 kg/m$^3$, the pumping power (in kW) required to maintain the flow is
+\begin{enumerate}
+    \item [A.] 1.8
+    \item [B.] 17.4
+    \item [C.] 20.5
+    \item [D.] 41.0
+  \end{enumerate}
+  \item[33.] Consider steady-state heat conduction across the thickness in a plane composite wall (as shown in the figure) exposed to convection conditions on both sides.
+
+Given: $h_i = 20 \, W/m^2K; \, h_o = 50 \, W/m^2K; \, T_{\infty,i} = 20 \,^\circ C; \, T_{\infty,o} = -2 \,^\circ C; \, k_1 = 20 \, W/mK; \, k_2 = 50 \, W/mK; \, L_1 = 0.30 \, m$ and $L_2 = 0.15 \, m$. 
+
+Assuming negligible contact resistance between the wall surfaces, the interface temperature, $T$ (in $^\circ C$), of the two walls will be
+
+ \begin{figure}[!ht]
+    \centering
+    \input{figs/fig1.tex}  % Specify the path to your TikZ file
+    \caption{ 1}
+    \label{fig:composite wall}
+    \end{figure}
+
+\begin{enumerate}
+    \item [A.] -0.50
+    \item [B.] 2.75
+    \item [C.] 3.75
+    \item [D.] 4.50
+  \end{enumerate}
+
+   
+\item[34.] The velocity profile of a fully developed laminar flow in a straight circular pipe, as shown in the figure,
+
+is given by the expression
+$$ u(r) = -\frac{R^2}{4 \mu} \brak{\frac{dp}{dx}}\brak{1 - \frac{r^2}{R^2}}$$
+
+where $\frac{dp}{dx}$ is a constant.
+ 
+The average velocity of fluid in the pipe is
+
+\begin{figure}[!ht]
+    \centering
+    \input{figs/fig2.tex}  % Specify the path to your TikZ file
+    \caption{ 1}
+    \label{fig:velocity profile}
+    \end{figure}
+
+\begin{enumerate}
+    \item [A.] $-\frac{R^2}{8 \mu} \brak{\frac{dp}{dx}}$
+    \item [B.] $-\frac{R^2}{4 \mu} \brak{\frac{dp}{dx}}$
+    \item [C.] $-\frac{R^2}{2 \mu} \brak{\frac{dp}{dx}}$
+    \item [D.] $-\frac{R^2}{ \mu} \brak{\frac{dp}{dx}}$
+  \end{enumerate}
+\item[35.] A solid shaft of diameter,d and length, L is fixed at both the ends. A torque, $T_0$ is applied at a distance, L/4 from the left end as shown in the figure given below.
+
+\begin{figure}[!ht]
+    \centering
+    \input{figs/fig3.tex}  % Specify the path to your TikZ file
+    \caption{ 1}
+    \label{fig:shaft}
+    \end{figure}
+
+The maximum shear stress in the shaft is 
+\begin{enumerate}
+    \item [A.] $\frac{16T_0}{\pi d^3}$
+    \item [B.] $\frac{12T_0}{\pi d^3}$
+    \item [C.] $\frac{8_0}{\pi d^3}$
+    \item [D.] $\frac{4T_0}{\pi d^3}$
+  \end{enumerate}
+\item[36.] An epicyclic gear train is shown schematically in the adjacent figure.
+
+The sun gear 2 on the input shaft is a 20 teeth external gear. The planet gear 3 is a 40 teeth external gear. The ring gear 5 is a 100 teeth internal gear. The ring gear 5 is fixed and the gear 2 is rotating at 60 rpm ccw (ccw = counter-clockwise and cw = clockwise).
+
+The arm 4 attached to the output shaft will rotate at 
+
+\begin{figure}[!ht]
+    \centering
+    \input{figs/fig4.tex}  % Specify the path to your TikZ file
+    \caption{ 1}
+    \label{fig:shaft}
+    \end{figure}
+
+\begin{enumerate}
+    \item [A.] 10 rpm ccw
+    \item [B.] 10 rpm cw
+    \item [C.] 12 rpm cw
+    \item [D.] 12 rpm ccw
+  \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+\end{enumerate}
+
+
+
+\bibliography{IEEEabrv,gvv_cite}
+\end{document}
