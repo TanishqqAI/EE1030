@@ -54,14 +54,14 @@
 \numberwithin{figure}{enumi}
 \renewcommand{\thetable}{\theenumi}
 \begin{enumerate}
-  \item Let R be a ring.If R$\sbrak{x}$ is a principal ideal domain,then R is necessarily a
+  \item Let R be a ring. If R$\sbrak{x}$ is a principal ideal domain,then R is necessarily a
   \begin{enumerate}
       \item Unique Factorization Domain
       \item Principal Ideal Domain
       \item Euclidean Domain
       \item Field
   \end{enumerate}
-  \item Consider the group homomorphism $\varphi : M_2\brak{\mathbb{R}} \rightarrow \mathbb{R}$ given by $\varphi \brak{A} = trace\brak{A}$. The kernel of $\varphi$ is isomorphic to which of the following groups?
+  \item Consider the group homomorphism $\varphi : M_2\brak{\mathbb{R}} \rightarrow \mathbb{R}$ given by $\varphi \brak{A} = \text{trace}\brak{A}$. The kernel of $\varphi$ is isomorphic to which of the following groups?
 \begin{enumerate}
     \item $M_2\brak{\mathbb{R}} / \cbrak{ A \in M_2\brak{\mathbb{R}} : \varphi\brak{A} = 0 }$
     \item $\mathbb{R}^2$
@@ -75,30 +75,34 @@
       \item no conditions on $\tau$ and $\tau'$
       \item $\tau \cap \tau' = \cbrak{\phi, X}$
   \end{enumerate}
-  \item Let $A \in M_3\brak{\mathbb{R}}$ be such that $det(A-I) = 0$, where $I$ denotes the $3 x 3$ identity matrix.If the $trace\brak{A} = 13$ and $det\brak{A} = 32$,then the sum of squares of the eigenvalues of A is \underline{\hspace{2cm}} 
+  \item Let $A \in M_3\brak{\mathbb{R}}$ be such that det$(A-I) = 0$, where $I$ denotes the $3 x 3$ identity matrix. If the trace$\brak{A} = 13$ and det$\brak{A} = 32$,then the sum of squares of the eigenvalues of A is \underline{\hspace{2cm}} 
   \item Let $V$ denote the vector space $C^5\sbrak{a,b}$ over $\mathbb{R}$ and $W = \cbrak{ f \in V : \frac{d^4 f}{dt^4} + 2 \frac{d^2 f}{dt^2} - f = 0}$. Then
   \begin{enumerate}
-    \item $dim\brak{V} = \infty$ and $dim\brak{W} = \infty$
-    \item $dim\brak{V} = \infty$ and $dim\brak{W} = 4$
-    \item $dim\brak{V} = 6$ and $dim\brak{W} = 5$
-    \item $dim\brak{V} = 5$ and $dim\brak{W} = 4$
+    \item dim$\brak{V} = \infty$ and dim$\brak{W} = \infty$
+    \item dim$\brak{V} = \infty$ and dim$\brak{W} = 4$
+    \item dim$\brak{V} = 6$ and dim$\brak{W} = 5$
+    \item dim$\brak{V} = 5$ and dim$\brak{W} = 4$
 \end{enumerate}
 \item Let $V$ be a real inner product space of dimension 10. Let $x, y \in V$ be non-zero vectors such that $\langle x, y \rangle = 0$. Then the dimension of $\cbrak{x}^\perp \cap \cbrak{y}^\perp is \underline{\hspace{2cm}}$
 \item Consider the following linear programming problem: Minimize $x_1 + x_2$ Subject to:
-$$2x_1 + x_2 \geq 8$$
-$$2x_1 + 5x_2 \geq 10$$
-$$x_1, x_2 \geq 0$$
+\begin{align}
+2x_1 + x_2 \geq 8 \\ 2x_1 + 5x_2 \geq 10 \\ x_1, x_2 \geq 0
+\end{align}
 The optimal value to this problem is \underline{\hspace{2cm}}.
-\item Let $$f(x) :=\begin{cases}
--3\pi & if  -\pi < x \leq 0 \\
-3\pi & if  0 < x < \pi
-\end{cases}$$ be a periodic function of period $2\pi$. The coefficient of $\sin 3x$ in the Fourier series expansion of $f\brak{x}$ on the interval $\sbrak{-\pi, \pi}$ is \underline{\hspace{2cm}}.
-\item For the sequence of functions 
-$$f_n(x) = \frac{1}{x^2} \brak{\sin\frac{1}{n x}}, \quad x \in \lsbrak{1}, \rbrak{\infty},$$
+\item Let \begin{align} 
+f(x) :=\begin{cases}
+-3\pi & \text{if} \ -\pi < x \leq 0 \\
+3\pi & \text{if} \ 0 < x < \pi
+\end{cases} 
+\end{align} 
+be a periodic function of period $2\pi$. The coefficient of $\sin 3x$ in the Fourier series expansion of $f\brak{x}$ on the interval $\sbrak{-\pi, \pi}$ is \underline{\hspace{2cm}}. \item For the sequence of functions 
+\begin{align}
+f_n(x) = \frac{1}{x^2} \brak{\sin\frac{1}{n x}}, \quad x \in \lsbrak{1}, \rbrak{\infty},
+\end{align}
 consider the following quantities expressed in terms of Lebesgue integrals:
 \begin{enumerate}
-    \item[I.] $\lim_{n \to \infty} \int_1^\infty f_x\brak{x} \, dx.$
-    \item[II.] $\int_1^\infty \lim_{n \to \infty} f_n\brak{x} \, dx.$
+    \item[I.] $\lim\limits_{n \to \infty} \int_1^\infty f_x\brak{x} \, dx.$
+    \item[II.] $\int_1^\infty \lim\limits_{n \to \infty} f_n\brak{x} \, dx.$
 \end{enumerate}
 Which of the following is \textbf{TRUE}?
 \begin{enumerate}
@@ -114,21 +118,21 @@ Which of the following is \textbf{TRUE}?
     \item $l^7 \subset l^3$ and $L^6\sbrak{0,1} \subset L^9\sbrak{0,1}$
     \item $l^7 \subset l^3$ and $L^9\sbrak{0,1} \subset L^6\sbrak{0,1}$
 \end{enumerate}
-\item The maximun modulus of $e^{z^2}$ on the set S=$\cbrak{ z \in \mathbb{C} : 0 \leq Re\brak{z} \leq 1, 0 \leq Im\brak{z} \leq 1}$ is
+\item The maximun modulus of $e^{z^2}$ on the set S=$\cbrak{ z \in \mathbb{C} : 0 \leq \text{Re}\brak{z} \leq 1, 0 \leq \text{Im}\brak{z} \leq 1}$ is
 \begin{enumerate}
     \item $\frac{2}{e}$
     \item $e$
     \item $e+1$
     \item $e^2$
 \end{enumerate}
-\item Let $d_1,d_2$ and $d_3$ be matrices on a set $X$ with at least two elements.Which of the following is \textbf{NOT} a metric on $X$?
+\item Let $d_1,d_2$ and $d_3$ be matrices on a set $X$ with at least two elements. Which of the following is \textbf{NOT} a metric on $X$?
 \begin{enumerate}
-    \item $min\cbrak{d_1,2}$
-    \item $max\cbrak{d_2,2}$
+    \item min$\cbrak{d_1,2}$
+    \item max$\cbrak{d_2,2}$
     \item $\frac{d_3}{1+d_3}$
     \item $\frac{d_1+d_2+d_3}{3}$
 \end{enumerate}
-\item Let $\Omega = \cbrak{ z \in \mathbb{C} : Im\brak{z} > 0 }$ and let $C$ be a smooth curve lying in $\Omega$ with initial point $-1 + 2i$ and final point $1 + 2i$. The value of $\int_C \frac{1 + 2z}{1 + z} \, dz$ is
+\item Let $\Omega = \cbrak{ z \in \mathbb{C} : \text{Im}\brak{z} > 0 }$ and let $C$ be a smooth curve lying in $\Omega$ with initial point $-1 + 2i$ and final point $1 + 2i$. The value of $\int_C \frac{1 + 2z}{1 + z} \, dz$ is
 \begin{enumerate}
     \item $4 - \frac{1}{2} \ln 2 + i \frac{\pi}{4}$
     \item $-4 + \frac{1}{2} \ln 2 + i \frac{\pi}{4}$
