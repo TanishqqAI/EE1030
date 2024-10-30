@@ -1,0 +1,196 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+ % Include tfrupee package
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{enumitem}
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\author{AI24BTECH11033 - Tanishq}
+\title{GATE 3}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\title{2018, EE}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+\item A $0-1$ Ampere moving iron ammeter has an internal resistance of $50 m\Omega$ and inductance of $0.1 mH$. A shunt coil is connected to extend its range to $0-10$ Ampere for all operating frequencies. The time constant in milliseconds and resistance in $m\Omega$ of the shunt coil respectively are
+\begin{enumerate}
+      \item 2, 5.55
+      \item 2, 1
+      \item 2.18, 0.55
+      \item 11.1, 2
+  \end{enumerate}
+  \item The positive, negative and zero sequence impedances of a three phase generator are $Z_1$, $Z_2$ and $Z_0$ respectively. For a line-to-line fault with fault impedance $Z_f$, the fault current is $I_f = k I_f$, where $I_f$ is the fault current with zero fault impedance. The relation between $Z_f$ and $k$ is
+\begin{enumerate}
+    \item $Z_f = \frac{(Z_1 + Z_2)(1 - k)}{k}$
+    \item $Z_f = \frac{(Z_1 + Z_2)(1 + k)}{k}$
+    \item $Z_f = \frac{(Z_1 + Z_2) k}{1 - k}$
+    \item $Z_f = \frac{(Z_1 + Z_2) k}{1 + k}$
+\end{enumerate}
+\item Consider the two bus power system network with given loads as shown in the figure. All the values shown in the figure are in per unit. The reactive power supplied by generator $G_1$ and $G_2$ are $Q_{G1}$ and $Q_{G2}$ respectively. The per unit values of $Q_{G1}$, $Q_{G2}$, and line reactive power loss $\brak{Q_{\text{loss}}}$ respectively are
+ \begin{figure}[!ht]
+    \centering
+    \input{figs/fig1.tex}  % Specify the path to your TikZ file
+    \label{fig:power system network}
+    \end{figure}
+\begin{enumerate}
+    \item 5.00, 12.68, 2.68
+    \item 6.34, 10.00, 1.34
+    \item 6.34, 11.34, 2.68
+    \item 5.00, 11.34, 1.34
+\end{enumerate}
+\item The per-unit power output of a salient-pole generator which is connected to an infinite bus, is given by the expression, $P = 1.4 \sin \delta + 0.15 \sin 2\delta$, where $\delta$ is the load angle. Newton-Raphson method is used to calculate the value of $\delta$ for $P = 0.8$ pu. If the initial guess is $30\degree$, then its value (in degree) at the end of the first iteration is 
+\begin{enumerate}
+    \item $15\degree$
+    \item $28.48\degree$
+    \item $28.74\degree$
+    \item $31.20\degree$
+\end{enumerate}
+\item A DC voltage source is connected to a series L-C circuit by turning on the switch S at time $t = 0$ as shown in the figure. Assume $i\brak{0} = 0, v\brak{0} = 0$. Which one of the following circular loci represents the plot of $i\brak{t}$ versus $v\brak{t}$?
+ \begin{figure}[!ht]
+    \centering
+    \input{figs/fig2.tex}  % Specify the path to your TikZ file
+    \label{fig:L-C circuit}
+    \end{figure}
+\begin{enumerate}
+     \item  \begin{figure}[!ht]
+    \input{figs/fig3.tex}  % Specify the path to your TikZ file
+    \label{fig:a}
+    \end{figure}
+    \item \begin{figure}[!ht]
+    \input{figs/fig4.tex}  % Specify the path to your TikZ file
+    \label{fig:b}
+    \end{figure}
+    \item \begin{figure}[!ht]
+    \input{figs/fig5.tex}  % Specify the path to your TikZ file
+    \label{fig:c}
+    \end{figure}
+    \item \begin{figure}[!ht]
+    \input{figs/fig6.tex}  % Specify the path to your TikZ file
+    \label{fig:d}
+    \end{figure}
+\end{enumerate}
+\item The equivalent impedance $Z_{eq}$ for the infinite ladder circuit shown in the figure is 
+\begin{figure}[!ht]
+\centering
+    \input{figs/fig7.tex}  % Specify the path to your TikZ file
+    \label{fig:infinite ladder}
+    \end{figure}
+\begin{enumerate}
+    \item j$12\Omega$
+    \item -j$12\Omega$
+    \item j$13\Omega$
+    \item $13\Omega$
+\end{enumerate}
+\item Consider a system governed by the following equations:
+\begin{align}
+    \frac{dx_1\brak{t}}{dt} &= x_2\brak{t} - x_1\brak{t} \\
+    \frac{dx_2\brak{t}}{dt} &= x_1\brak{t} - x_2\brak{t}
+\end{align}
+The initial conditions are such that $x_1\brak{0} < x_2\brak{0} < \infty$. Let $x_{1f} = \lim\limits_{t \to \infty} x_1\brak{t}$ and $x_{2f} = \lim\limits_{t \to \infty} x_2\brak{t}$. Which one of the following is true?
+\begin{enumerate}
+    \item $x_{1f} < x_{2f} < \infty$
+    \item $x_{2f} < x_{1f} < \infty$
+    \item $x_{1f} = x_{2f} < \infty$
+    \item $x_{1f} = x_{2f} = \infty$
+\end{enumerate}
+\item The number of roots of the polynomial, $s^7 + s^6 + 7s^5 + 14s^4 + 31s^3 + 73s^2 + 25s + 200$, in the open left half of the complex plane is
+\begin{enumerate}
+    \item 3
+    \item 4
+    \item 5
+    \item 6
+\end{enumerate}
+\item If $C$ is a circle $\abs{z} = 4$ and $f\brak{z} = \frac{z^2}{(z^2 - 3z + 2)^2}$, then $\oint_C f(z) dz$ is
+\begin{enumerate}
+    \item 1
+    \item 0
+    \item -1
+    \item -2
+\end{enumerate}
+\item Which one of the following statements is true about the digital circuit shown in the figure
+\begin{figure}[!ht]
+\centering
+    \input{figs/fig8.tex}  % Specify the path to your TikZ file
+    \label{fig:digital circuit}
+    \end{figure}
+\begin{enumerate}
+    \item It can be used for dividing the input frequency by 3.
+    \item It can be used for dividing the input frequency by 5.
+    \item It can be used for dividing the input frequency by 7.
+    \item It cannot be reliably used as a frequency divider due to disjoint internal cycles.
+\end{enumerate}
+  \item Digital input signals $A, B, C$ with $A$ as the MSB and $C$ as the LSB are used to realize the Boolean function $F = m_0 + m_2 + m_3 + m_5 + m_7$, where $m_i$ denotes the $i^{th}$ minterm. In addition, F has don't care for $m_1$. The simplified expression for $F$ is given by 
+  \begin{enumerate}
+      \item $\overline{AC} + \overline{B}C + AC$
+      \item $\overline{A} + C$
+      \item $\overline{C} + A$
+      \item $\overline{A}C + BC + A\overline{C}$
+  \end{enumerate}
+  \item Consider the two continous-time signals defined below:
+  \begin{align}
+      x_1\brak{t}=\begin{cases}
+      \abs{t}, \ -1 \leq t \leq 1 \\ 0, \ \text{otherwise}
+      \end{cases} ,
+      x_2\brak{t}=\begin{cases}
+      1 - \abs{t}, \ -1 \leq t \leq 1 \\ 0, \ \text{otherwise}
+      \end{cases}
+  \end{align}
+  These signals are sampled with a sampling period of $T = 0.25$ seconds to obtain discrete-time signals $x_1\sbrak{n}$ and $x_2\sbrak{n}$, respectively.  Which one of the following statements is true?
+  \begin{enumerate}
+      \item The energy of $x_1\sbrak{n}$ is greater than the energy of $x_2\sbrak{n}$.
+      \item The energy of $x_2\sbrak{n}$ is greater than the energy of $x_1\sbrak{n}$.
+      \item $x_1\sbrak{n}$ and $x_2\sbrak{n}$ have equal energies.
+      \item Neither $x_1\sbrak{n}$ nor $x_2\sbrak{n}$ is a finite-energy signal.
+  \end{enumerate}
+  \item The signal energy of the continuous-time signal $x\brak{t}=\sbrak{\brak{t-1}u\brak{t-1}} - \sbrak{\brak{t-2}u\brak{t-2}} - \sbrak{\brak{t-3}u\brak{t-3}} + \sbrak{\brak{t-4}u\brak{t-4}}$ is
+  \begin{enumerate}
+      \item $\frac{11}{3}$
+      \item $\frac{7}{3}$
+      \item $\frac{1}{3}$
+      \item $\frac{5}{3}$
+  \end{enumerate}
+\end{enumerate} 
+\bibliography{IEEEabrv,gvv_cite}
+\end{document}

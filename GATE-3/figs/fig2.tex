@@ -1,0 +1,20 @@
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (-2.5,18.75) to[american voltage source] (-2.5,12.5);
+\draw (-2.5,18.75) to[closing switch] (1.25,18.75);
+\draw (1.25,18.75) to[L ] (3.75,18.75);
+\draw (3.75,18.75) to[C] (3.75,12.5);
+\draw (-2.5,12.5) to[short] (3.75,12.5);
+\draw [->, >=Stealth] (2,19.25) -- (3,19.25);
+\node [font=\LARGE] at (-1.6,15.6) {5V};
+\node [font=\normalsize] at (2.7,15.6) {C =1F};
+\node [font=\Large] at (4.6,15.6) {v(t)};
+\node [font=\LARGE] at (4,16) {+};
+\node [font=\LARGE] at (4,15.25) {-};
+\node [font=\large] at (2.5,18.25) {L=1H};
+\node [font=\large] at (2.5,19.5) {i(t)};
+\node [font=\large] at (-0.75,18.5) {t=0};
+\node [font=\LARGE] at (-0.75,19.3) {S};
+\end{circuitikz}
+}%

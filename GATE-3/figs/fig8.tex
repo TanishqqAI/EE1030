@@ -1,0 +1,51 @@
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\node at (-7.5,10) [circ] {};
+\node at (10,15) [circ] {};
+\draw (7.5,15) to[short] (10,15);
+\draw (8.75,15) to[short] (8.75,18.5);
+\draw (7.5,16.25) to[short] (7.5,12.5);
+\draw (7.5,12.5) to[short] (5,12.5);
+\draw (5,12.5) to[short] (5,16.25);
+\draw (5,16.25) to[short] (7.5,16.25);
+\draw (5,15) to[short] (2.5,15);
+\draw (2.5,15) to[short] (2.5,16.25);
+\draw (2.5,16.25) to[short] (0,16.25);
+\draw (0,16.25) to[short] (0,12.5);
+\draw (0,12.5) to[short] (2.5,12.5);
+\draw (2.5,12.5) to[short] (2.5,15);
+\draw (0,15) to[short] (-2.5,15);
+\draw (-2.5,15) to[short] (-2.5,16.25);
+\draw (-2.5,16.25) to[short] (-5,16.25);
+\draw (-5,16.25) to[short] (-5,12.5);
+\draw (-5,12.5) to[short] (-2.5,12.5);
+\draw (-2.5,12.5) to[short] (-2.5,15);
+\draw (-5,15) to[short] (-6.25,15);
+\draw (-6.25,15) to[short] (-6.25,18.25);
+\draw (1,18.5) to[short] (-1.75,18.5);
+\draw (1,18) to[short] (-1.75,18);
+\draw (-1.75,18.5) node[ieeestd nand port, anchor=in 2, scale=0.89, rotate=180](port){} (port.out) to[short] (-6.25,18.25);
+\draw (1,18) to[short] (3.75,18);
+\draw (3.75,18) to[short] (3.75,15);
+\draw (1,18.5) to[short] (8.75,18.5);
+\draw (-7.5,10) to[short] (3.75,10);
+\draw (3.75,10) to[short] (3.75,12.75);
+\draw [->, >=Stealth] (3.75,12.75) -- (5.25,12.75);
+\draw [short] (-1.25,10) -- (-1.25,12.75);
+\draw [short] (-6.25,10) -- (-6.25,12.75);
+\draw [->, >=Stealth] (-1.25,12.75) -- (0.25,12.75);
+\draw [->, >=Stealth] (-6.25,12.75) -- (-4.75,12.75);
+\node [font=\LARGE] at (-7.5,9.5) {$f_{in}$};
+\node [font=\LARGE] at (-4.5,13) {C};
+\node [font=\LARGE] at (-4.5,15.75) {D};
+\node [font=\LARGE] at (-3,15.75) {Q};
+\node [font=\LARGE] at (0.5,15.75) {D};
+\node [font=\LARGE] at (2,15.75) {Q};
+\node [font=\LARGE] at (0.5,13) {C};
+\node [font=\LARGE] at (5.5,13) {C};
+\node [font=\LARGE] at (5.5,15.75) {D};
+\node [font=\LARGE] at (7,15.75) {Q};
+\node [font=\LARGE] at (10,15.5) {$f_{out}$};
+\end{circuitikz}
+}%
