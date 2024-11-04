@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  31 OCT 2024 21:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  5 NOV 2024 00:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1936,39 +1936,37 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) (./figs/fig1.tex
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 25.
-LaTeX Font Info:    Calculating math sizes for size <17> on input line 25.
+) (./figs/fig2.tex
+LaTeX Font Info:    Calculating math sizes for size <17> on input line 29.
 )
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
-dist/fonts/enc/dvips/base/8r.enc}
+(./figs/fig3.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/sh
+are/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
-] (./figs/fig2.tex) (./figs/fig3.tex)
-(./figs/fig4.tex) (./figs/fig5.tex) (./figs/fig6.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-(./figs/fig7.tex) [3] (./figs/fig8.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
+] (./figs/fig4.tex) [2]
+(./figs/fig1.tex
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 25.
+)
 No file gate3.bbl.
-[5] (./gate3.aux)
+[3] (./gate3.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `gate3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 54650 strings out of 474222
- 1299667 string characters out of 5748734
- 1967975 words of memory out of 5000000
- 75968 multiletter control sequences out of 15000+600000
- 670316 words of font info for 300 fonts, out of 8000000 for 9000
+ 53920 strings out of 474222
+ 1278378 string characters out of 5748734
+ 1959975 words of memory out of 5000000
+ 75288 multiletter control sequences out of 15000+600000
+ 673866 words of font info for 305 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 109i,16n,109p,1195b,1316s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,11n,109p,1195b,1235s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/te
@@ -1976,10 +1974,10 @@ xmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on gate3.pdf (5 pages, 69628 bytes).
+Output written on gate3.pdf (3 pages, 63623 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 82 named destinations out of 1000 (max. 500000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
+ 38 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

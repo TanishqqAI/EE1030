@@ -41,7 +41,7 @@
 \bibliographystyle{IEEEtran}
 \vspace{3cm}
 \author{AI24BTECH11033 - Tanishq}
-\title{GATE 3(2018,EE Q27-30)}
+\title{GATE 3}
 % \maketitle
 % \newpage
 % \bigskip
@@ -54,6 +54,47 @@
 \numberwithin{figure}{enumi}
 \renewcommand{\thetable}{\theenumi}
 \begin{enumerate}
+\item Consider a non-singular $2x2$ square matrix $A$. If trace$\brak{A} = 4$ and trace$\brak{A^2} = 5$, the determinant of the matrix $A$ is \underline{\hspace{1cm}} (up to 1 decimal place ).
+\item Let $f$ be a real-valued function of a real variable defined as $f\brak{x} = x - \sbrak{x}, \text{where} \sbrak{x}$ denotes the largest integer less than or equal to $x$. The value of $\int_{0.25}^{1.25} f\brak{x} dx.$ is \underline{\hspace{1cm}} (up to 2 decimal place ).
+\item In the two-port network shown, the $h_{11}$ parameter $\brak{\text{where}, h_{11} = \frac{V_1}{I_1}, \text{when} V_2 = 0}$ in ohms is \underline{\hspace{1cm}} (up to 2 decimal place ).
+\begin{figure}[!ht]
+    \centering
+    \input{figs/fig2.tex}  % Specify the path to your TikZ file
+    \label{fig:power system network}
+    \end{figure}
+\item The series impedance matrix of a short three-phase transmission line in phase coordinates is:
+$\begin{bmatrix}
+Z_s & Z_m & Z_m \\
+Z_m & Z_s & Z_m \\
+Z_m & Z_m & Z_s
+\end{bmatrix}$
+If the positive sequence impedance is $(1 + j10) \Omega$, and the zero sequence impedance is $(4 + j31) \Omega$, then the imaginary part of $Z_m$ is \underline{\hspace{1cm}} (up to 2 decimal place ).
+\item The positive, negative and zero sequence impedances of a 125 MVA, three-phase, 15.5 kV, star-grounded, 50 Hz generator are $j0.1$ pu, $j0.05$ pu and $j0.01$ pu respectively, on the machine rating base. The machine is unloaded and working at the rated terminal voltage. If the grounding impedance of the generator is $j0.01$ pu, then the magnitude of fault current for a b-phase to ground fault (in kA) is \underline{\hspace{1cm}} (up to 2 decimal place ). 
+\item A 1000 x 1000 bus admittance matrix for an electric power system has 8000 non-zero elements. The minimum number of branches (transmission lines and transformers) in this system are  \underline{\hspace{1cm}} (up to 2 decimal place ).
+\item The waveform of the current drawn by a semi-converter from a sinusoidal AC voltage source is shown in the figure. If $I_0 = 20$ A, the rms value of the fundamental component of the current is \underline{\hspace{1cm}} A (up to 2 decimal
+    \begin{figure}[!ht]
+    \centering
+    \input{figs/fig3.tex}  % Specify the path to your TikZ file
+    \label{fig:power system network}
+    \end{figure}
+\item A separately excited DC motor has an armature resistance $R_a = 0.05 \, \Omega$. The field excitation is kept constant. At an armature voltage of 100 V, the motor produces a torque of 500 Nm at zero speed. Neglecting all mechanical losses, the no-load speed of the motor $\brak{\text{in} \frac{radian}{s}}$ for an armature voltage of 150 V is \underline{\hspace{1cm}} (up to 2 decimal places).
+\item Consider a unity feedback system with forward transfer function given by:
+\begin{align}
+G(s) = \frac{1}{(s+1)(s+2)}
+\end{align}
+The steady-state error in the output of the system for a unit-step input is \underline{\hspace{1cm}} (up to 2 decimal places).
+\item A transformer with toroidal core of permeability $\mu$ is shown in the figure. Assuming uniform flux density across the circular core cross-section of radius $r << R$, and neglecting any leakage flux, the best estimate for the mean radius $R$ is
+\begin{figure}[!ht]
+    \centering
+    \input{figs/fig4.tex}  % Specify the path to your TikZ file
+    \label{fig:power system network}
+    \end{figure}
+\begin{enumerate}
+    \item $\frac{\mu V r^2 N_p^2 \omega}{I}$
+    \item $\frac{\mu I r^2 N_p N_s \omega}{V}$
+    \item $\frac{\mu V r^2 N_p^2 \omega}{2I}$
+    \item $\frac{\mu I r^2 N_p^2 \omega}{2V}$
+\end{enumerate}
 \item A $0-1$ Ampere moving iron ammeter has an internal resistance of $50 m\Omega$ and inductance of $0.1 mH$. A shunt coil is connected to extend its range to $0-10$ Ampere for all operating frequencies. The time constant in milliseconds and resistance in $m\Omega$ of the shunt coil respectively are
 \begin{enumerate}
       \item 2, 5.55
@@ -80,117 +121,6 @@
     \item 6.34, 11.34, 2.68
     \item 5.00, 11.34, 1.34
 \end{enumerate}
-\item The per-unit power output of a salient-pole generator which is connected to an infinite bus, is given by the expression, $P = 1.4 \sin \delta + 0.15 \sin 2\delta$, where $\delta$ is the load angle. Newton-Raphson method is used to calculate the value of $\delta$ for $P = 0.8$ pu. If the initial guess is $30\degree$, then its value (in degree) at the end of the first iteration is 
-\begin{enumerate}
-    \item $15\degree$
-    \item $28.48\degree$
-    \item $28.74\degree$
-    \item $31.20\degree$
-\end{enumerate}
-\item A DC voltage source is connected to a series L-C circuit by turning on the switch S at time $t = 0$ as shown in the figure. Assume $i\brak{0} = 0, v\brak{0} = 0$. Which one of the following circular loci represents the plot of $i\brak{t}$ versus $v\brak{t}$?
- \begin{figure}[!ht]
-    \centering
-    \input{figs/fig2.tex}  % Specify the path to your TikZ file
-    \label{fig:L-C circuit}
-    \end{figure}
-\begin{enumerate}
-     \item  \begin{figure}[!ht]
-    \input{figs/fig3.tex}  % Specify the path to your TikZ file
-    \label{fig:a}
-    \end{figure}
-    \item \begin{figure}[!ht]
-    \input{figs/fig4.tex}  % Specify the path to your TikZ file
-    \label{fig:b}
-    \end{figure}
-    \item \begin{figure}[!ht]
-    \input{figs/fig5.tex}  % Specify the path to your TikZ file
-    \label{fig:c}
-    \end{figure}
-    \item \begin{figure}[!ht]
-    \input{figs/fig6.tex}  % Specify the path to your TikZ file
-    \label{fig:d}
-    \end{figure}
-\end{enumerate}
-\item The equivalent impedance $Z_{eq}$ for the infinite ladder circuit shown in the figure is 
-\begin{figure}[!ht]
-\centering
-    \input{figs/fig7.tex}  % Specify the path to your TikZ file
-    \label{fig:infinite ladder}
-    \end{figure}
-\begin{enumerate}
-    \item j$12\Omega$
-    \item -j$12\Omega$
-    \item j$13\Omega$
-    \item $13\Omega$
-\end{enumerate}
-\item Consider a system governed by the following equations:
-\begin{align}
-    \frac{dx_1\brak{t}}{dt} &= x_2\brak{t} - x_1\brak{t} \\
-    \frac{dx_2\brak{t}}{dt} &= x_1\brak{t} - x_2\brak{t}
-\end{align}
-The initial conditions are such that $x_1\brak{0} < x_2\brak{0} < \infty$. Let $x_{1f} = \lim\limits_{t \to \infty} x_1\brak{t}$ and $x_{2f} = \lim\limits_{t \to \infty} x_2\brak{t}$. Which one of the following is true?
-\begin{enumerate}
-    \item $x_{1f} < x_{2f} < \infty$
-    \item $x_{2f} < x_{1f} < \infty$
-    \item $x_{1f} = x_{2f} < \infty$
-    \item $x_{1f} = x_{2f} = \infty$
-\end{enumerate}
-\item The number of roots of the polynomial, $s^7 + s^6 + 7s^5 + 14s^4 + 31s^3 + 73s^2 + 25s + 200$, in the open left half of the complex plane is
-\begin{enumerate}
-    \item 3
-    \item 4
-    \item 5
-    \item 6
-\end{enumerate}
-\item If $C$ is a circle $\abs{z} = 4$ and $f\brak{z} = \frac{z^2}{(z^2 - 3z + 2)^2}$, then $\oint_C f(z) dz$ is
-\begin{enumerate}
-    \item 1
-    \item 0
-    \item -1
-    \item -2
-\end{enumerate}
-\item Which one of the following statements is true about the digital circuit shown in the figure
-\begin{figure}[!ht]
-\centering
-    \input{figs/fig8.tex}  % Specify the path to your TikZ file
-    \label{fig:digital circuit}
-    \end{figure}
-\begin{enumerate}
-    \item It can be used for dividing the input frequency by 3.
-    \item It can be used for dividing the input frequency by 5.
-    \item It can be used for dividing the input frequency by 7.
-    \item It cannot be reliably used as a frequency divider due to disjoint internal cycles.
-\end{enumerate}
-  \item Digital input signals $A, B, C$ with $A$ as the MSB and $C$ as the LSB are used to realize the Boolean function $F = m_0 + m_2 + m_3 + m_5 + m_7$, where $m_i$ denotes the $i^{th}$ minterm. In addition, F has don't care for $m_1$. The simplified expression for $F$ is given by 
-  \begin{enumerate}
-      \item $\overline{AC} + \overline{B}C + AC$
-      \item $\overline{A} + C$
-      \item $\overline{C} + A$
-      \item $\overline{A}C + BC + A\overline{C}$
-  \end{enumerate}
-  \item Consider the two continous-time signals defined below:
-  \begin{align}
-      x_1\brak{t}=\begin{cases}
-      \abs{t}, \ -1 \leq t \leq 1 \\ 0, \ \text{otherwise}
-      \end{cases} ,
-      x_2\brak{t}=\begin{cases}
-      1 - \abs{t}, \ -1 \leq t \leq 1 \\ 0, \ \text{otherwise}
-      \end{cases}
-  \end{align}
-  These signals are sampled with a sampling period of $T = 0.25$ seconds to obtain discrete-time signals $x_1\sbrak{n}$ and $x_2\sbrak{n}$, respectively.  Which one of the following statements is true?
-  \begin{enumerate}
-      \item The energy of $x_1\sbrak{n}$ is greater than the energy of $x_2\sbrak{n}$.
-      \item The energy of $x_2\sbrak{n}$ is greater than the energy of $x_1\sbrak{n}$.
-      \item $x_1\sbrak{n}$ and $x_2\sbrak{n}$ have equal energies.
-      \item Neither $x_1\sbrak{n}$ nor $x_2\sbrak{n}$ is a finite-energy signal.
-  \end{enumerate}
-  \item The signal energy of the continuous-time signal $x\brak{t}=\sbrak{\brak{t-1}u\brak{t-1}} - \sbrak{\brak{t-2}u\brak{t-2}} - \sbrak{\brak{t-3}u\brak{t-3}} + \sbrak{\brak{t-4}u\brak{t-4}}$ is
-  \begin{enumerate}
-      \item $\frac{11}{3}$
-      \item $\frac{7}{3}$
-      \item $\frac{1}{3}$
-      \item $\frac{5}{3}$
-  \end{enumerate}
 \end{enumerate} 
 \bibliography{IEEEabrv,gvv_cite}
 \end{document}

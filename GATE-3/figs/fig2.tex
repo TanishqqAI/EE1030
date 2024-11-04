@@ -1,20 +1,29 @@
-\resizebox{0.4\textwidth}{!}{%
+\resizebox{0.5\textwidth}{!}{%
 \begin{circuitikz}
 \tikzstyle{every node}=[font=\LARGE]
-\draw (-2.5,18.75) to[american voltage source] (-2.5,12.5);
-\draw (-2.5,18.75) to[closing switch] (1.25,18.75);
-\draw (1.25,18.75) to[L ] (3.75,18.75);
-\draw (3.75,18.75) to[C] (3.75,12.5);
-\draw (-2.5,12.5) to[short] (3.75,12.5);
-\draw [->, >=Stealth] (2,19.25) -- (3,19.25);
-\node [font=\LARGE] at (-1.6,15.6) {5V};
-\node [font=\normalsize] at (2.7,15.6) {C =1F};
-\node [font=\Large] at (4.6,15.6) {v(t)};
-\node [font=\LARGE] at (4,16) {+};
-\node [font=\LARGE] at (4,15.25) {-};
-\node [font=\large] at (2.5,18.25) {L=1H};
-\node [font=\large] at (2.5,19.5) {i(t)};
-\node [font=\large] at (-0.75,18.5) {t=0};
-\node [font=\LARGE] at (-0.75,19.3) {S};
+\draw (-6.25,17.5) to[R] (-2.5,17.5);
+\draw (-2.5,17.5) to[R] (-2.5,13.75);
+\draw (-2.5,17.5) to[R] (1.25,17.5);
+\draw (-6.25,13.75) to[short] (1.25,13.75);
+\draw (-2.5,17.5) to[short] (-2.5,20);
+\draw (1.25,20) to[short] (1.25,17.5);
+\draw (1.25,17.5) to[short] (2.5,17.5);
+\draw (1.25,13.75) to[short] (2.5,13.75);
+\node at (2.5,17.5) [circ] {};
+\node at (2.5,13.75) [circ] {};
+\node at (-6.25,17.5) [circ] {};
+\node at (-6.25,13.75) [circ] {};
+\draw (-2.5,20) to[american controlled current source] (1.25,20);
+\node [font=\LARGE] at (-1.75,15.5) {1 $\Omega$};
+\node [font=\LARGE] at (-0.5,18) {1 $\Omega$};
+\node [font=\LARGE] at (-4.5,18) {1 $\Omega$};
+\node [font=\LARGE] at (-0.25,20.75) {$2 I_1$};
+\node [font=\LARGE] at (3,17.5) {+};
+\node [font=\LARGE] at (2.75,13.75) {-};
+\node [font=\LARGE] at (-6.5,13.5) {-};
+\node [font=\LARGE] at (-6.5,17.25) {+};
+\node [font=\LARGE] at (-6.5,16) {$V_1$};
+\node [font=\LARGE] at (2.5,16) {$V_2$};
+\draw [->, >=Stealth] (-4.75,17) -- (-3.75,17);
 \end{circuitikz}
 }%

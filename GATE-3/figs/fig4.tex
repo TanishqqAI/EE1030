@@ -1,12 +1,46 @@
-\resizebox{0.25\textwidth}{!}{%
+\resizebox{0.5\textwidth}{!}{%
 \begin{circuitikz}
-\tikzstyle{every node}=[font=\normalsize]
-\draw [->, >=Stealth] (0.5,17.5) -- (4.75,17.5);
-\draw [->, >=Stealth] (1.25,16.25) -- (1.25,20);
-\draw  (2.5,17.5) circle (1.25cm);
-\draw [->, >=Stealth] (2.5,17.5) -- (2,18.5);
-\node [font=\normalsize] at (2.5,17.25) {(5,0)};
-\node [font=\normalsize] at (0.75,19.75) {i(t)};
-\node [font=\normalsize] at (4.75,17.25) {v(t)};
+\tikzstyle{every node}=[font=\large]
+\draw  (5,11.25) circle (6.25cm);
+\draw  (5,11.25) circle (4.5cm);
+\draw [ dashed] (5,11.25) circle (5.5cm);
+\draw [short] (5,17.5) .. controls (5.75,17.5) and (6,16) .. (5,15.75);
+\draw [short] (5,17.5) .. controls (4.25,17.5) and (4,16) .. (5,15.75);
+\node at (5,16.75) [circ] {};
+\node at (5,11.25) [circ] {};
+\draw [->, >=Stealth] (5,11.25) -- (8.5,15.5);
+\draw [->, >=Stealth] (5,16.75) -- (5.5,17);
+\draw [short] (-0.75,13.75) -- (-6.25,13.75);
+\draw [short] (-0.75,8.75) -- (-6.25,8.75);
+\draw (-6.25,8.75) to[sinusoidal voltage source, sources/symbol/rotate=auto] (-6.25,13.75);
+\draw (10.75,13.75) to[short] (16.25,13.75);
+\draw (10.75,8.75) to[short] (16.25,8.75);
+\draw [short] (-0.75,8.75) .. controls (0.5,9) and (1.5,9.25) .. (1,9.25);
+\draw [short] (-0.75,13.75) .. controls (-0.5,13.25) and (0.25,13.25) .. (1,13);
+\draw [short] (-1,13) .. controls (-0.5,12.5) and (0,12.5) .. (0.75,12.5);
+\draw [short] (-1.25,11.75) .. controls (-0.5,11.75) and (-0.25,12) .. (0.5,11.75);
+\draw [short] (-1.25,10.75) .. controls (-0.5,10.75) and (-0.25,10.5) .. (0.5,11);
+\draw [short] (-1,9.5) .. controls (-0.25,9.5) and (1,9.75) .. (0.75,10);
+\draw [short] (10.75,13.75) .. controls (10,14) and (9.25,13.75) .. (9.25,12.75);
+\draw [short] (10.75,8.75) .. controls (9.75,9) and (9.25,8.75) .. (9,9.25);
+\draw [short] (11,12.75) .. controls (10.5,13) and (9.75,13) .. (9.5,12.25);
+\draw [short] (11.25,12) .. controls (10.75,12.25) and (10.25,12.25) .. (9.5,11.5);
+\draw [short] (9.5,10.75) .. controls (10.25,11.5) and (11,11.5) .. (11.25,11);
+\draw [short] (9.25,10) .. controls (10.25,9.75) and (10.75,9.75) .. (11.25,10);
+\draw [short] (9.25,9.75) .. controls (9.75,9.5) and (10,9.5) .. (11,9.25);
+\draw [->, >=Stealth] (12.5,14.25) -- (15,14.25);
+\draw [->, >=Stealth] (-5,14.25) -- (-2.5,14.25);
+\node [font=\large] at (16.5,14) {+};
+\node [font=\large] at (16.5,8.5) {-};
+\node [font=\large] at (15,11) {$v_{s}$};
+\node [font=\large] at (12,11) {$N_{s}$};
+\node [font=\large] at (-6.5,8.5) {-};
+\node [font=\large] at (-6.5,14) {+};
+\node [font=\large] at (-4.5,10.5) {$V_{p} = V cos(\omega t)$};
+\node [font=\large] at (-2,11) {$N_{p}$};
+\node [font=\large] at (-3.75,14.75) {$i_{p} = I sin(\omega t)$};
+\node [font=\large] at (13.75,14.75) {$i_{s} = 0$};
+\node [font=\large] at (7,12.75) {R};
+\node [font=\large] at (5,17) {r};
 \end{circuitikz}
 }%

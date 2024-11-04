@@ -1,12 +1,45 @@
-\resizebox{0.25\textwidth}{!}{%
+\resizebox{0.5\textwidth}{!}{%
 \begin{circuitikz}
-\tikzstyle{every node}=[font=\normalsize]
-\draw [->, >=Stealth] (-1.25,18.75) -- (3.75,18.75);
-\draw [->, >=Stealth] (1.25,15) -- (1.25,20);
-\draw  (1.25,17.5) circle (1.25cm);
-\draw [->, >=Stealth] (1.25,17.5) -- (2.25,16.75);
-\node [font=\normalsize] at (0.75,17.5) {(0,-5)};
-\node [font=\normalsize] at (0.75,20) {i(t)};
-\node [font=\normalsize] at (4,18.5) {v(t)};
+\tikzstyle{every node}=[font=\large]
+\draw [short] (-6.25,13.75) .. controls (-5.25,16.75) and (-4.25,15.75) .. (-3.75,13.75);
+\draw [short] (-3.75,13.75) .. controls (-3,10.5) and (-1.75,11.5) .. (-1.25,13.75);
+\draw [short] (-1.25,13.75) .. controls (0,17.75) and (0.75,14.75) .. (1.25,13.75);
+\draw [short] (1.25,13.75) .. controls (2.5,10) and (3.25,12.75) .. (3.75,13.75);
+\draw [->, >=Stealth, dashed] (-6.25,12.5) -- (-6.25,17.5);
+\draw [->, >=Stealth, dashed] (-6.25,13.75) -- (5,13.75);
+\node [font=\LARGE] at (5,13.25) {$\omega t$};
+\node [font=\large] at (-6.5,18.25) {Voltage and};
+\node [font=\large] at (-3.75,15.75) {$V_{m} sin(\omega t)$};
+\draw [dashed] (-5.75,15) -- (-5.75,13.25);
+\draw [dashed] (-3.75,14.5) -- (-3.75,13);
+\draw [dashed] (-3.25,14.25) -- (-3.25,11.5);
+\draw [short] (-6.25,13.75) -- (-5.75,13.75);
+\draw [short] (-5.75,13.75) -- (-5.75,14.5);
+\draw [short] (-5.75,14.5) -- (-3.75,14.5);
+\draw [short] (-3.75,14.5) -- (-3.75,13.75);
+\draw [short] (-3.75,13.75) -- (-3.25,13.75);
+\draw [short] (-3.25,13.75) -- (-3.25,13);
+\draw [short] (-3.25,13) -- (-1.25,13);
+\draw [short] (-1.25,13) -- (-1.25,13.75);
+\draw [short] (-1.25,13.75) -- (-0.75,13.75);
+\draw [short] (-0.75,13.75) -- (-0.75,14.5);
+\draw [short] (-0.75,14.5) -- (1.25,14.5);
+\draw [short] (1.25,14.5) -- (1.25,13.75);
+\draw [short] (1.25,13.75) -- (1.75,13.75);
+\draw [short] (1.75,13.75) -- (3.75,13.75);
+\draw [short] (1.75,13.75) -- (1.75,13);
+\draw [short] (1.75,13) -- (3.75,13);
+\draw [short] (3.75,13) -- (3.75,13.75);
+\draw [->, >=Stealth] (-5,15.25) -- (-5,14.5);
+\draw [->, >=Stealth] (-5,12.75) -- (-5,13.75);
+\draw [->, >=Stealth] (-2.5,14.5) -- (-2.5,13.75);
+\draw [->, >=Stealth] (-2.5,12.25) -- (-2.5,13);
+\node [font=\large] at (-6.5,13.5) {0};
+\node [font=\large] at (-5.75,13) {$30\degree$};
+\node [font=\large] at (-5,14) {$I_{0}$};
+\node [font=\large] at (-4,12.75) {$180\degree$};
+\node [font=\large] at (-3.25,11.25) {$210\degree$};
+\node [font=\large] at (-2.5,13.25) {$I_{0}$};
+\node [font=\large] at (-6.75,17.75) {current};
 \end{circuitikz}
 }%
