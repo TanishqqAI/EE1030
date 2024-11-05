@@ -1,0 +1,9 @@
+\beamer@sectionintoc {2}{Question}{3}{0}{1}
+\beamer@sectionintoc {3}{Solution}{4}{0}{2}
+\beamer@subsectionintoc {3}{1}{Parameters}{4}{0}{2}
+\beamer@subsectionintoc {3}{2}{Section formula}{5}{0}{2}
+\beamer@subsectionintoc {3}{3}{Finding k}{6}{0}{2}
+\beamer@subsectionintoc {3}{4}{Graph}{7}{0}{2}
+\beamer@subsectionintoc {3}{5}{C Code}{8}{0}{2}
+\beamer@subsectionintoc {3}{6}{Python Code}{9}{0}{2}
+\beamer@subsectionintoc {3}{7}{Python Code}{10}{0}{2}
